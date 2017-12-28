@@ -1,0 +1,138 @@
+.app-control {
+			position:fixed;
+			top:70px;
+			left:10px;
+			width:350px;
+			height:500px;
+			background-color: #faf9f5;
+			border:1px solid;
+			border-radius:10px;
+			box-shadow:0px 10px 20px 10px #6f5d4f;
+			}
+.Map-app-menu {
+			position:fixed;
+			top:10px;
+			left:10px;
+			width:350px;
+			height:50px;
+			background-color: #d9534f;
+			}
+.Map-app-option {
+	height:100%;
+	width:30%;
+	color:#ffffff !important;
+	font-size:30px;
+	float:left;
+	padding:10px;
+}
+.app-content { width:320px;
+			height:420px;
+			background-color: #faf9f5;
+			margin:15px;
+			}
+.app-hidden {display:none !important;}
+.app-show {display:block;}
+.navOn {
+		background-color:#555;
+		color:#ffffff !important;
+		}   
+.app-uploading {
+	width:320px;
+    position: absolute;
+}
+.app-subContent {
+	height:100%;
+	width:100%;
+}
+.app-nav {
+		margin:0;
+		}	
+.app-float {
+		float:left;
+		margin-right:5px;
+		}		
+.app-floatRight {
+		float:right;
+		}		
+.app-choseTasks {
+	    margin-left: auto;
+		margin-right: auto;
+		    margin-bottom: 10px;
+			width:140px;
+			
+		}	
+#app-drop {
+	width:140px;
+}		
+.app-menu{
+		width:100%;
+		height:44px;
+		padding:5px;
+		background-color:#f4f3ef;
+}
+.app-tasksTable{
+		width:100%;
+		
+}
+.app-Ok {
+	width:119px;
+	 bottom: 30px;
+	 right:15px;
+    position: absolute;
+}
+.app-tablediv {
+	background-color:#ffffff;
+	height:200px;
+	border:2px solid #ddd;
+	margin-bottom:5px;
+	overflow-y:scroll;
+}
+.dropify-wrapper {
+	    display: block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100px!important;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777;
+    background-color: #FFF;
+    background-image: none;
+    text-align: center;
+    border: 2px solid #E5E5E5;
+    -webkit-transition: border-color .15s linear;
+    transition: border-color .15s linear;
+}
+
+
+
+.app-modal-tasksid {
+	width:500px !important;
+}
+.app-modal-workersid {
+	width:500px !important;
+}
+.app-Title {
+	background-color:#d9534f;
+	width:100%;
+	height:30px;
+}
+.app-inputgroup-Task {
+	width:100%;
+}
+.app-input-task-th,.app-input-worker-th  {
+	padding:10px;
+}
+.app-input-task-p,.app-input-worker-p {
+	margin:1px;
+}
+.app-input-task-testXY {
+	width:402px !important;
+	margin-right:0px;
+}
+.app-inputgroup-worker {
+	
+}

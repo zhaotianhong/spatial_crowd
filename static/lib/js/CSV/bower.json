@@ -1,0 +1,31 @@
+{
+  "name": "comma-separated-values",
+  "main": "csv.js",
+  "version": "3.4.1",
+  "homepage": "https://github.com/knrz/CSV.js",
+  "authors": ["Kash Nouroozi <hi@knrz.co>"],
+  "description": "Simple, blazing-fast CSV parsing/encoding in JavaScript. Full RFC 4180 compliance.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "csv",
+    "csv parse",
+    "csv encode",
+    "csv rfc",
+    "tsv",
+    "tsv parse",
+    "tsv encode",
+    "tsv rfc"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

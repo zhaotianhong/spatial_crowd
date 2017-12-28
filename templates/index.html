@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='lib/src/plug/uploading/dist/css/dropify.min.css') }} " type="text/css">
+	<link rel="stylesheet" href="https://openlayers.org/en/v4.4.2/css/ol.css" >
+	<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/app.css') }} " type="text/css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/jquery.datetimepicker.css') }} " type="text/css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/bootstrap/css/bootstrap.min.css') }} " type="text/css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/openlayers/ol.css') }} " type="text/css">
+	<script data-main="/crowdSrc/main" src="{{ url_for('static', filename='lib/js/require.js') }} "></script>
+
+</head>
+<body>
+    <div id="map" class="map"></div>
+</body>
+</html>
