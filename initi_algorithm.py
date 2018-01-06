@@ -188,7 +188,7 @@ class BasicAlgorithm():
                     break
             return to_json(do, self.plot_matrix, type)
         else:
-            print('Without this strategy')
+            print'Without this strategy'
             return None
 
 
@@ -200,4 +200,4 @@ if __name__ == '__main__':
     ba = BasicAlgorithm(atasks=tasks_dic, adis_matrix=dis_matrix, alpha=7000, asearch_r=10000, aworker_v=10,
                         aplot_matrix=plot_matrix)  # 每秒的速度
     ba_result = ba.run_ba('SH')
-    print(ba_result)
+    print ba_result
