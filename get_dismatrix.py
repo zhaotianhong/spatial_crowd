@@ -11,7 +11,6 @@ import requests
 import pandas as pd
 import random
 import coord_transform as ct
-import initi_algorithm as init
 
 TASKS = {1: [113.93694, 22.533868450412825, 200, 260, 8], 2: [113.94619898551942, 22.51389891454255, 250, 310, 5],
          3: [113.8753509520999, 22.577717970860856, 260, 320]}
@@ -68,6 +67,7 @@ def get_dismatrix(tasks):
                 start = str(v1[0]) + ',' + str(v1[1])
                 end = str(v2[0]) + ',' + str(v2[1])
                 dis, plot = request_dis(start, end)
+                #plot坐标转换
                 one_line = plot.split(';')
                 for lonlat in one_line:
                     ll = lonlat.split(',')
@@ -84,9 +84,5 @@ def get_dismatrix(tasks):
 
 
 if __name__ == '__main__':
-    TASKS = init.read_data(r'E:\flask_sc\data\90T.txt',1,2)
-
-
     dis_matrix, plot_matrix = get_dismatrix(TASKS)
-    plot_matrix.to_csv(r'E:\flask_sc\data\90T_p.txt')
     print dis_matrix

@@ -8,28 +8,46 @@ import os
 import time
 import random
 import pandas as pd
+import numpy as np
 from math import sqrt
 
 
-def read_data(origin_path, matrix_path, plot_path):
+def read_data(origin_path, matrix_path, plot_path,num):
     '''从计算机本地读取包含空间众包任务数据的txt文件，并格式化输出
     :param path: 文件路径
     :return: 字典{ID：[x,y,r,d,q]}，距离矩阵
     '''
     tasks_dic = {}
+
     # 读取任务表
     with open(origin_path, 'r') as fr:
-        for line in fr:
+        lines = fr.readlines()
+        choose = list(random.sample(np.arange(len(lines)),num))
+        for i in choose:
+            line = lines[i]
             l = line[:-1].split('\t')
             # 数据结构：{id: [x,y,发布时间，截止时间，容量]}
             tasks_dic[l[0]] = [float(l[1]), float(l[2]), int(l[3]), int(l[4]) + 3600, int(l[5])]
     # 读取距离矩阵
-    # dis_matrix = pd.read_csv(matrix_path, dtype=int, sep=',', index_col=0)
-    # dis_matrix.index = dis_matrix.columns
-    # # 读取画图矩阵
-    # plot_matrix = pd.read_csv(plot_path, dtype=str, sep=',', index_col=0)
-    # plot_matrix.index = plot_matrix.columns
-    return tasks_dic#, dis_matrix, plot_matrix
+    keys = list(tasks_dic.keys())
+    dis_matrix = pd.read_csv(matrix_path, dtype=int, sep=',', index_col=0)
+    dis_matrix.index = dis_matrix.columns
+    # 读取画图矩阵
+    plot_matrix = pd.read_csv(plot_path, dtype=str, sep=',', index_col=0)
+    plot_matrix.index = plot_matrix.columns
+    return tasks_dic, dis_matrix, plot_matrix
+
+def get_random_tasks(num=93):
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    tasks_dic, dis_matrix, plot_matrix = read_data(script_dir + r'\data\90T.txt',
+                                                   script_dir + r'\data\90Tdis.csv',
+                                                   script_dir + r'\data\90Tplot.txt',num)
+    randomTasks = []
+    for k,v in tasks_dic.items():
+        task = {'id':k,'x':v[0],'y':v[1],'time_a':timestamp_to_time(v[2]),'time_d':timestamp_to_time(v[3]),'volume':v[4]}
+        randomTasks.append(task)
+    Data = {'num':num,'randomTasks':randomTasks}
+    return Data,tasks_dic, dis_matrix, plot_matrix
 
 
 def timestamp_to_time(timestamp):
@@ -193,11 +211,12 @@ class BasicAlgorithm():
 
 
 if __name__ == '__main__':
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    tasks_dic, dis_matrix, plot_matrix = read_data(script_dir + r'\data\90T.txt',
-                                                      script_dir + r'\data\90Tdis.csv',
-                                                      script_dir + r'\data\90Tplot.txt')
-    ba = BasicAlgorithm(atasks=tasks_dic, adis_matrix=dis_matrix, alpha=7000, asearch_r=10000, aworker_v=10,
-                        aplot_matrix=plot_matrix)  # 每秒的速度
-    ba_result = ba.run_ba('SH')
-    print ba_result
+    # script_dir = os.path.dirname(os.path.realpath(__file__))
+    # tasks_dic, dis_matrix, plot_matrix = read_data(script_dir + r'\data\90T.txt',
+    #                                                   script_dir + r'\data\90Tdis.csv',
+    #                                                   script_dir + r'\data\90Tplot.txt')
+    # ba = BasicAlgorithm(atasks=tasks_dic, adis_matrix=dis_matrix, alpha=7000, asearch_r=10000, aworker_v=10,
+    #                     aplot_matrix=plot_matrix)  # 每秒的速度
+    # ba_result = ba.run_ba('SH')
+    # print ba_result
+    aa = get_random_tasks(20)

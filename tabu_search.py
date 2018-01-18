@@ -195,15 +195,11 @@ class Tabu(bs.BasicAlgorithm):
         return bs.to_json(do, self.plot_matrix, 'Tabu')
 
 
-def get_result():
+def get_result(tasks_dic, dis_matrix, plot_matrix):
     '''
     前端接口
     :return: 返回所有算法的json格式的结果
     '''
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    tasks_dic, dis_matrix, plot_matrix = bs.read_data(script_dir + r'\data\90T.txt',
-                                                      script_dir + r'\data\90Tdis.csv',
-                                                      script_dir + r'\data\90Tplot.txt')
     TS = Tabu(atasks=tasks_dic, adis_matrix=dis_matrix, alpha=7000, asearch_r=10000, aworker_v=10,
               aplot_matrix=plot_matrix)  # 每秒的速度
     ts = TS.run_tabu()

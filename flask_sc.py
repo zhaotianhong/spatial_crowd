@@ -6,6 +6,7 @@
 
 from flask import Flask, render_template, jsonify
 import tabu_search as ts
+import initi_algorithm as ba
 
 app = Flask(__name__, static_url_path='')
 
@@ -17,9 +18,15 @@ def index():
 
 @app.route('/result/')
 def return_result():
-    result = ts.get_result()
+    result = ts.get_result(tasks_dic, dis_matrix, plot_matrix)
     return jsonify(result)
 
+
+@app.route('/get_random_tasks/<num>/')
+def return_random_tasks(num):
+    global  tasks_dic, dis_matrix, plot_matrix
+    Data, tasks_dic, dis_matrix, plot_matrix = ba.get_random_tasks(int(num))
+    return jsonify(Data)
 
 
 if __name__ == '__main__':
