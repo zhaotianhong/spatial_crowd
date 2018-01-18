@@ -10,6 +10,8 @@
 import requests
 import pandas as pd
 import random
+import coord_transform as ct
+import initi_algorithm as init
 
 TASKS = {1: [113.93694, 22.533868450412825, 200, 260, 8], 2: [113.94619898551942, 22.51389891454255, 250, 310, 5],
          3: [113.8753509520999, 22.577717970860856, 260, 320]}
@@ -62,16 +64,29 @@ def get_dismatrix(tasks):
             if dis_matrix[k2][k1] >= 0:
                 break
             else:
+                new_plot = ''
                 start = str(v1[0]) + ',' + str(v1[1])
                 end = str(v2[0]) + ',' + str(v2[1])
                 dis, plot = request_dis(start, end)
+                one_line = plot.split(';')
+                for lonlat in one_line:
+                    ll = lonlat.split(',')
+                    lon = float(ll[0])
+                    lat = float(ll[1])
+                    new_lonlat = ct.gcj02_to_wgs84(lon, lat)
+                    point = str(new_lonlat[0]) + ',' + str(new_lonlat[1]) + ';'
+                    new_plot += point
                 dis_matrix[k1][k2] = dis
-                plot_matrix[k1][k2] = plot
+                plot_matrix[k1][k2] = new_plot[:-1]
                 dis_matrix[k2][k1] = dis
-                plot_matrix[k2][k1] = plot
+                plot_matrix[k2][k1] = new_plot[:-1]
     return dis_matrix, plot_matrix
 
 
 if __name__ == '__main__':
+    TASKS = init.read_data(r'E:\flask_sc\data\90T.txt',1,2)
+
+
     dis_matrix, plot_matrix = get_dismatrix(TASKS)
+    plot_matrix.to_csv(r'E:\flask_sc\data\90T_p.txt')
     print dis_matrix

@@ -24,12 +24,12 @@ def read_data(origin_path, matrix_path, plot_path):
             # 数据结构：{id: [x,y,发布时间，截止时间，容量]}
             tasks_dic[l[0]] = [float(l[1]), float(l[2]), int(l[3]), int(l[4]) + 3600, int(l[5])]
     # 读取距离矩阵
-    dis_matrix = pd.read_csv(matrix_path, dtype=int, sep=',', index_col=0)
-    dis_matrix.index = dis_matrix.columns
-    # 读取画图矩阵
-    plot_matrix = pd.read_csv(plot_path, dtype=str, sep=',', index_col=0)
-    plot_matrix.index = plot_matrix.columns
-    return tasks_dic, dis_matrix, plot_matrix
+    # dis_matrix = pd.read_csv(matrix_path, dtype=int, sep=',', index_col=0)
+    # dis_matrix.index = dis_matrix.columns
+    # # 读取画图矩阵
+    # plot_matrix = pd.read_csv(plot_path, dtype=str, sep=',', index_col=0)
+    # plot_matrix.index = plot_matrix.columns
+    return tasks_dic#, dis_matrix, plot_matrix
 
 
 def timestamp_to_time(timestamp):
@@ -194,7 +194,7 @@ class BasicAlgorithm():
 
 if __name__ == '__main__':
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    tasks_dic, dis_matrix, plot_matrix = bs.read_data(script_dir + r'\data\90T.txt',
+    tasks_dic, dis_matrix, plot_matrix = read_data(script_dir + r'\data\90T.txt',
                                                       script_dir + r'\data\90Tdis.csv',
                                                       script_dir + r'\data\90Tplot.txt')
     ba = BasicAlgorithm(atasks=tasks_dic, adis_matrix=dis_matrix, alpha=7000, asearch_r=10000, aworker_v=10,
