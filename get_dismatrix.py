@@ -31,13 +31,13 @@ def request_dis(start, dest):
             '946a317c917d70ca56a48cb1a4787163']
     # 随机选取key增加访问次数
     key = KEYS[random.randint(0, 4)]
-    print key
+    # print key
     walk = r'http://restapi.amap.com/v3/direction/walking?key=' + key + '&origin=' + start + '&destination=' + dest
     dive = r'http://restapi.amap.com/v3/direction/driving?key=' + key + '&origin=' + start + '&destination=' + dest
     try:
         content = requests.get(dive).json()
     except:
-        print 'can not get distance, see you tomorrow !'
+        # print 'can not get distance, see you tomorrow !'
         return None
     dis = int(content['route']['paths'][0]['distance'])
     plot = ''
@@ -85,4 +85,4 @@ def get_dismatrix(tasks):
 
 if __name__ == '__main__':
     dis_matrix, plot_matrix = get_dismatrix(TASKS)
-    print dis_matrix
+    # print dis_matrix

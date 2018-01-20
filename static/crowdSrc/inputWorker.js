@@ -14,17 +14,17 @@ define(['toolkit'],function (toolkit) {//
 "			<tr>"+
 "				<th class='app-input-worker-th'>"+
 "						<p class='app-float app-input-worker-p'>Velocity:</p>"+
-"						<input type='text' class='form-control app-input-worker-big app-input-worker-velocity ' aria-describedby='basic-addon1'>"+
+"						<input type='text' class='form-control app-input-worker-big app-input-worker-velocity ' value='20' aria-describedby='basic-addon1'>"+
 "				</th>"+
 "				<th class='app-input-worker-th'>"+
 "						<p class='app-float app-input-worker-p'>Volume:</p>"+
-"						<input type='text' class='form-control app-input-worker-volume '  aria-describedby='basic-addon1'>"+
+"						<input type='text' class='form-control app-input-worker-volume ' value='10'  aria-describedby='basic-addon1'>"+
 "				</th>				"+
 "			</tr>			"+
 "			<tr>"+
 "				<th class='app-input-worker-th' colspan='2>"+
 "						<p class='app-float app-input-worker-p'>radius:</p>"+
-"						<input type='text' class='form-control app-input-worker-big app-input-worker-radius ' aria-describedby='basic-addon1'>"+
+"						<input type='text' class='form-control app-input-worker-big app-input-worker-radius ' value='1000' aria-describedby='basic-addon1'>"+
 "				</th>"+
 "			</tr>			"+
 "		</table>"+

@@ -225,4 +225,4 @@ if __name__ == '__main__':
     sh = TS.run_ba('SH')
     th = TS.run_ba('TH')
     r = TS.run_ba('RH')
-    print ts['tasks'], sth['tasks'], sh['tasks'], th['tasks'], r['tasks']
+    # print ts['tasks'], sth['tasks'], sh['tasks'], th['tasks'], r['tasks']

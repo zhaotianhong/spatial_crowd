@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34f8672-ed6e-42d7-aa7a-4c5feffe3b46" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/crowdSrc/Route.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_sc.py" afterPath="$PROJECT_DIR$/flask_sc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_dismatrix.py" afterPath="$PROJECT_DIR$/get_dismatrix.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initi_algorithm.py" afterPath="$PROJECT_DIR$/initi_algorithm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/Collect_Tasks.js" afterPath="$PROJECT_DIR$/static/crowdSrc/Collect_Tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/Task.js" afterPath="$PROJECT_DIR$/static/crowdSrc/Task.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/Worker.js" afterPath="$PROJECT_DIR$/static/crowdSrc/Worker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/inputTID.js" afterPath="$PROJECT_DIR$/static/crowdSrc/inputTID.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/inputTask.js" afterPath="$PROJECT_DIR$/static/crowdSrc/inputTask.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/inputWorker.js" afterPath="$PROJECT_DIR$/static/crowdSrc/inputWorker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/main.js" afterPath="$PROJECT_DIR$/static/crowdSrc/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/member.js" afterPath="$PROJECT_DIR$/static/crowdSrc/member.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/panel.js" afterPath="$PROJECT_DIR$/static/crowdSrc/panel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/crowdSrc/toolkit.js" afterPath="$PROJECT_DIR$/static/crowdSrc/toolkit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/lib/css/app.css" afterPath="$PROJECT_DIR$/static/lib/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tabu_search.py" afterPath="$PROJECT_DIR$/tabu_search.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +32,7 @@
     <SUITE FILE_PATH="coverage/flask_sc$get_dismatrix.coverage" NAME="get_dismatrix Coverage Results" MODIFIED="1516197645384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_sc$tuba_search.coverage" NAME="tuba_search Coverage Results" MODIFIED="1514178767909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_sc$initi_algorithm.coverage" NAME="initi_algorithm Coverage Results" MODIFIED="1516245516173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_sc$flask_sc.coverage" NAME="flask_sc Coverage Results" MODIFIED="1516247398130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_sc$flask_sc.coverage" NAME="flask_sc Coverage Results" MODIFIED="1516456739981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_sc$creatdata.coverage" NAME="creatdata Coverage Results" MODIFIED="1513520841980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_sc$tabu_search.coverage" NAME="tabu_search Coverage Results" MODIFIED="1515592093289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -28,96 +41,10 @@
       <file leaf-file-name="flask_sc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_sc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
-                <element signature="e#93#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/crowdSrc/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="panel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/crowdSrc/panel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5472">
-              <caret line="288" column="0" lean-forward="false" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tabu_search.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tabu_search.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="201" column="7" lean-forward="false" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <marker date="1514184552651" expanded="true" signature="858:866" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initi_algorithm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initi_algorithm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <element signature="e#94#120#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexing.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/python/Lib/site-packages/pandas/core/indexing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="1471" column="0" lean-forward="false" selection-start-line="1471" selection-start-column="0" selection-end-line="1471" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generic.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/python/Lib/site-packages/pandas/core/generic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="346" column="0" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_dismatrix.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_dismatrix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
-              <folding>
-                <element signature="e#127#142#0" expanded="true" />
+                <element signature="e#93#150#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,9 +53,88 @@
       <file leaf-file-name="coord_transform.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coord_transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="panel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/crowdSrc/panel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="642" column="56" lean-forward="false" selection-start-line="642" selection-start-column="56" selection-end-line="642" selection-end-column="56" />
+              <folding>
+                <marker date="1516329041756" expanded="true" signature="85:26046" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/crowdSrc/Task.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <marker date="1516296456502" expanded="true" signature="48:2395" ph="{...}" />
+                <marker date="1516296456502" expanded="true" signature="78:91" ph="{...}" />
+                <marker date="1516296456502" expanded="true" signature="2230:2374" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabu_search.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tabu_search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4294">
+              <caret line="226" column="23" lean-forward="false" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
+              <folding>
+                <element signature="e#90#118#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initi_algorithm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initi_algorithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="988">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="e#94#120#0" expanded="true" />
+                <marker date="1516296452675" expanded="true" signature="1986:2055" ph="..." />
+                <marker date="1516296452675" expanded="true" signature="7564:7617" ph="..." />
+                <marker date="1516296452675" expanded="true" signature="7646:8232" ph="..." />
+                <marker date="1516296452675" expanded="true" signature="7651:8202" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_dismatrix.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_dismatrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="15" />
+              <folding>
+                <marker date="1516296452667" expanded="true" signature="416:905" ph="..." />
+                <marker date="1516296452667" expanded="true" signature="2948:2965" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,6 +157,7 @@
       <find>app-route-check</find>
       <find>app-route-chec</find>
       <find>print</find>
+      <find>generateRandomTasks</find>
     </findStrings>
     <replaceStrings>
       <replace>innerHTML</replace>
@@ -166,12 +173,13 @@
         <option value="$PROJECT_DIR$/static/crowdSrc/main.js" />
         <option value="$PROJECT_DIR$/get_matrix.py" />
         <option value="$PROJECT_DIR$/tuba_search.py" />
-        <option value="$PROJECT_DIR$/static/crowdSrc/panel.js" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/coord_transform.py" />
-        <option value="$PROJECT_DIR$/get_dismatrix.py" />
-        <option value="$PROJECT_DIR$/initi_algorithm.py" />
         <option value="$PROJECT_DIR$/tabu_search.py" />
+        <option value="$PROJECT_DIR$/get_dismatrix.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/crowdSrc/Task.js" />
+        <option value="$PROJECT_DIR$/coord_transform.py" />
+        <option value="$PROJECT_DIR$/initi_algorithm.py" />
+        <option value="$PROJECT_DIR$/static/crowdSrc/panel.js" />
         <option value="$PROJECT_DIR$/flask_sc.py" />
       </list>
     </option>
@@ -183,8 +191,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="643" />
-    <option name="y" value="3" />
+    <option name="x" value="625" />
+    <option name="y" value="27" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -203,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,13 +221,25 @@
             <path>
               <item name="flask_sc" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask_sc" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_sc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_sc" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdSrc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_sc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_sc" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,16 +404,16 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30181542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41186163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28995058" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33113673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45140034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3804841" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -417,86 +436,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tabu_search.py</url>
-          <line>227</line>
+          <line>223</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="86" />
+      <option name="time" value="89" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51110">
-          <caret line="2743" column="0" lean-forward="false" selection-start-line="2743" selection-start-column="0" selection-end-line="2743" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5852">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/_strptime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6688">
-          <caret line="360" column="66" lean-forward="false" selection-start-line="360" selection-start-column="66" selection-end-line="360" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_dismatrix.py" />
-    <entry file="file://$PROJECT_DIR$/static/crowdSrc/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/crowdSrc/panel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5852">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tuba_search.py" />
-    <entry file="file://$PROJECT_DIR$/flask_sc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#93#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <marker date="1514184552651" expanded="true" signature="858:866" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5852">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/_strptime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6688">
-          <caret line="360" column="66" lean-forward="true" selection-start-line="360" selection-start-column="66" selection-end-line="360" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/codecs.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/_strptime.py" />
     <entry file="file://$PROJECT_DIR$/get_dismatrix.py" />
     <entry file="file://$PROJECT_DIR$/static/crowdSrc/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -525,6 +475,10 @@
           <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="e#94#120#0" expanded="true" />
+            <marker date="1516296452675" expanded="true" signature="1986:2055" ph="..." />
+            <marker date="1516296452675" expanded="true" signature="7564:7617" ph="..." />
+            <marker date="1516296452675" expanded="true" signature="7646:8232" ph="..." />
+            <marker date="1516296452675" expanded="true" signature="7651:8202" ph="..." />
           </folding>
         </state>
       </provider>
@@ -534,7 +488,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#93#142#0" expanded="true" />
+            <element signature="e#93#150#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,9 +497,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <marker date="1514184552651" expanded="true" signature="858:866" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +527,7 @@
         <state relative-caret-position="266">
           <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
-            <element signature="e#93#142#0" expanded="true" />
+            <element signature="e#93#150#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,9 +536,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <marker date="1514184552651" expanded="true" signature="858:866" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +566,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#93#142#0" expanded="true" />
+            <element signature="e#93#150#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -631,150 +581,120 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_matrix.py" />
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/_strptime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6688">
-          <caret line="360" column="66" lean-forward="false" selection-start-line="360" selection-start-column="66" selection-end-line="360" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="2035" column="0" lean-forward="false" selection-start-line="2035" selection-start-column="0" selection-end-line="2035" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51110">
-          <caret line="2743" column="0" lean-forward="false" selection-start-line="2743" selection-start-column="0" selection-end-line="2743" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5852">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4712">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/_strptime.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/frame.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/common.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/pandas/core/generic.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/codecs.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/random.py" />
     <entry file="file://$PROJECT_DIR$/tuba_search.py" />
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/werkzeug/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16416">
-          <caret line="870" column="0" lean-forward="false" selection-start-line="870" selection-start-column="0" selection-end-line="870" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/werkzeug/wrappers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/werkzeug/test.py" />
+    <entry file="file://D:/Program Files (x86)/Anaconda/Lib/site-packages/werkzeug/wrappers.py" />
     <entry file="file://$PROJECT_DIR$/creatdata.py" />
-    <entry file="file://$PROJECT_DIR$/static/crowdSrc/panel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5472">
-          <caret line="288" column="0" lean-forward="false" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/crowdSrc/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="230">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coord_transform.py">
+    <entry file="file://D:/python/Lib/site-packages/pandas/core/generic.py" />
+    <entry file="file://D:/python/Lib/site-packages/pandas/core/indexing.py" />
+    <entry file="file://F:/GIS/python/Binstall/anaconda/Lib/ntpath.py" />
+    <entry file="file://F:/GIS/python/Binstall/anaconda/Lib/_bootlocale.py" />
+    <entry file="file://F:/GIS/python/Binstall/anaconda/Lib/random.py" />
+    <entry file="file://F:/GIS/python/Binstall/anaconda/Lib/site-packages/flask/app.py" />
+    <entry file="file://F:/GIS/python/Binstall/anaconda/Lib/site-packages/werkzeug/debug/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/static/crowdSrc/member.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="346" column="0" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <marker date="1514184552651" expanded="true" signature="858:866" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Lib/site-packages/pandas/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="1471" column="0" lean-forward="false" selection-start-line="1471" selection-start-column="0" selection-end-line="1471" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initi_algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#94#120#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_dismatrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        <state relative-caret-position="171">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="15" />
           <folding>
-            <element signature="e#127#142#0" expanded="true" />
+            <marker date="1516296452667" expanded="true" signature="416:905" ph="..." />
+            <marker date="1516296452667" expanded="true" signature="2948:2965" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coord_transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/crowdSrc/Task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <marker date="1516296456502" expanded="true" signature="48:2395" ph="{...}" />
+            <marker date="1516296456502" expanded="true" signature="78:91" ph="{...}" />
+            <marker date="1516296456502" expanded="true" signature="2230:2374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Lib/site-packages/werkzeug/debug/__init__.py" />
     <entry file="file://$PROJECT_DIR$/tabu_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="201" column="7" lean-forward="false" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="4294">
+          <caret line="226" column="23" lean-forward="false" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
+          <folding>
+            <element signature="e#90#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initi_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#94#120#0" expanded="true" />
+            <marker date="1516296452675" expanded="true" signature="1986:2055" ph="..." />
+            <marker date="1516296452675" expanded="true" signature="7564:7617" ph="..." />
+            <marker date="1516296452675" expanded="true" signature="7646:8232" ph="..." />
+            <marker date="1516296452675" expanded="true" signature="7651:8202" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Lib/site-packages/flask/app.py" />
+    <entry file="file://$PROJECT_DIR$/static/crowdSrc/panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="642" column="56" lean-forward="false" selection-start-line="642" selection-start-column="56" selection-end-line="642" selection-end-column="56" />
+          <folding>
+            <marker date="1516329041756" expanded="true" signature="85:26046" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flask_sc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <element signature="e#93#142#0" expanded="true" />
+            <element signature="e#93#150#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -59,7 +59,7 @@ def timestamp_to_time(timestamp):
 
 def time_to_timestamp(time_str):
     # 时间装时间戳
-    timeArray = time.strptime(time_str, "%Y-%m-%d %H:%M")
+    timeArray = time.strptime(time_str, "%Y-%m-%d %H:%M:%S")
     timestamp = time.mktime(timeArray)
     return timestamp
 
@@ -206,7 +206,7 @@ class BasicAlgorithm():
                     break
             return to_json(do, self.plot_matrix, type)
         else:
-            print'Without this strategy'
+            # print'Without this strategy'
             return None
 
 

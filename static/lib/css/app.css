@@ -4,7 +4,7 @@
 			left:10px;
 			width:350px;
 			height:500px;
-			background-color: #faf9f5;
+			background-color: #f8f5e4;
 			border:1px solid;
 			border-radius:10px;
 			box-shadow:0px 10px 20px 10px #6f5d4f;
@@ -15,19 +15,24 @@
 			left:10px;
 			width:350px;
 			height:50px;
-			background-color: #d9534f;
+			background-color: #ea8068;
+			box-shadow: 1px 2px 1px rgba(0,0,0,.15);
 			}
+
 .Map-app-option {
 	height:100%;
 	width:30%;
-	color:#ffffff !important;
+	color:#f8f5e4 !important;
 	font-size:30px;
 	float:left;
 	padding:10px;
 }
+.app-task-tr:hover{
+	background-color: #ea8068;
+}
 .app-content { width:320px;
 			height:420px;
-			background-color: #faf9f5;
+			background-color: #f8f5e4;
 			margin:15px;
 			}
 .app-hidden {display:none !important;}
@@ -40,7 +45,7 @@
 	width:320px;
     position: absolute;
 }
-.app-subContent {
+.app-subContent,.app-routesTable,.app-routeAlg {
 	height:100%;
 	width:100%;
 }
@@ -72,7 +77,15 @@
 }
 .app-tasksTable{
 		width:100%;
-		
+		font-size:10px;		
+}
+.app-TableHead{
+	font-size:14px;
+	
+	color:#636363;
+}
+.app-tasksTable th,.app-workersTable th {
+    text-align:center!important;
 }
 .app-Ok {
 	width:119px;
@@ -81,14 +94,20 @@
     position: absolute;
 }
 .app-tablediv {
-	background-color:#ffffff;
-	height:200px;
+	width:100%;
+	background-color:#ffffff;	
 	border:2px solid #ddd;
 	margin-bottom:5px;
 	overflow-y:scroll;
 }
+.app-taskTableDiv{
+	height:200px;
+}
+.app-workerTableDiv{
+	height:320px;
+}
 .dropify-wrapper {
-	    display: block;
+	 display: block;
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -130,9 +149,85 @@
 	margin:1px;
 }
 .app-input-task-testXY {
-	width:402px !important;
+	width:356px !important;
 	margin-right:0px;
 }
-.app-inputgroup-worker {
-	
+.app-task-add,.app-worker-add {
+	font-weight: bold !important;
+	width: 100%;
+    padding-left: 40%!important;
+}
+.app-task-add:hover,.app-worker-add:hover,.app-worker-delete:hover {
+	color:#dc6865;
+}
+.app-tableAdd {
+	width:100%;
+}
+.app-randomTasksDIV {
+	margin-left:70px;
+}
+.app-task-popup {
+  position: absolute;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  padding: 15px;
+  border-radius: 10px;
+  bottom: 12px;
+  left: -50px;
+  border: 1px solid #cccccc;
+
+  min-width: 280px;
+  height: :100px;
+}
+.app-task-popup:after, .app-task-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.app-task-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.app-task-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.app-routeTh{
+	padding: 1px!important;
+	width: 33%;
+	height: 49.9%;
+}
+.app-routeTableDiv{
+	height: 300px;
+}
+.app-routeAlg:hover{
+	background-color: #f1d9b6;
+}
+.app-tasksNum{
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 20px;
+	color: #000000;
+	background-color: #ccc;
+	cursor:pointer;
+	line-height: 20px;
+}
+.app-tasksNum:hover{
+	background-color: #c9302c;
+	color: #fff;
+}
+.app-routeActive{
+	font-size: 40px;
+	color: #fff;
+	background-color: #ea8068;
 }

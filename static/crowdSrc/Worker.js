@@ -25,23 +25,11 @@ define(['ol','toolkit'],function (ol,toolkit) {
 		}
 	
 	Worker.prototype.createEle=function(opt){
-				var wID=this.getID();
-				var th=document.createElement("tr");
-				var id_tr=document.createElement("th");
-				var v_tr=document.createElement("th");
-				var vol_tr=document.createElement("th");			
-				var r_tr=document.createElement("th");
+				var tr=document.createElement("tr");				
+				tr.className="app-worker-tr";
+				tr.innerHTML="<th>"+this.getID()+"</th>"+"<th>"+opt.velocity+"</th>"+"<th>"+opt.radius+"</th>"+"<th><span class='glyphicon glyphicon-minus-sign app-worker-delete' aria-hidden='true'> </th>";
 				
-				id_tr.innerHTML=wID;
-				v_tr.innerHTML=opt.velocity;
-				vol_tr.innerHTML=opt.volume;
-				r_tr.innerHTML=opt.radius;
-				
-				th.appendChild(id_tr);
-				th.appendChild(v_tr);
-				th.appendChild(vol_tr);
-				th.appendChild(r_tr);
-				return th;
+				return tr;
 		}
 	Worker.prototype.getID=function(){
 				var id=this.geojson.properties.id;

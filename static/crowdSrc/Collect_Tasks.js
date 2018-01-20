@@ -31,13 +31,12 @@ define(['ol','toolkit','Task'],function (ol,toolkit,Task) {
 				}					
 		}		
 	//返回需要传输的geojson
-	Collect_Tasks.prototype.toGeoJson=function(){
+	Collect_Tasks.prototype.getGeoJson=function(){
 		this.geojson.features=[];
 		for (i=0;i<this.tasks.length;i++){
-			this.geojson.features.push(this.tasks[i].geojson);
+			this.geojson.features.push(this.tasks[i].getGeojson());
 		}
-		var geo=JSON.stringify(this.geojson);
-		return geo;
+		return this.geojson;
 
 		}
 	//准备要给source用的feature

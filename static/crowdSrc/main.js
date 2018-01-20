@@ -7,11 +7,7 @@ require.config({
 		ol: "../lib/js/openlayers/ol",
 		app:"./app",
 		dropify:"../lib/src/plug/uploading/dist/js/dropify",
-		datetimepicker:"../lib/src/plug/datetimepicker/build/jquery.datetimepicker.full",
-		member:"./member",
-		Collect_Tasks:"./Collect_Tasks",
-		Task:"./Task",
-		Worker:"./Worker"
+		datetimepicker:"../lib/src/plug/datetimepicker/build/jquery.datetimepicker.full"
     },
 	shim: {
 
@@ -42,37 +38,30 @@ require(['jquery', 'CSV', 'bootstrap','ol','app','toolkit','dropify','member','d
 		$("body").append(app.inputTID);
 		$("body").append(app.inputTask);
 		$("body").append(app.inputWorker);
+
 　　　　var map = new ol.Map({
-        interactions: ol.interaction.defaults().extend([
-          
-        ]),
-		controls: ol.control.defaults({
-          attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
-            collapsible: false
-          })
-        }).extend([
-		app.menu,
-          app.panel,
-		  new ol.control.MousePosition
-        ]),
+        interactions: ol.interaction.defaults(),
+		controls: [app.menu,
+	       			app.panel,
+		  			new ol.control.MousePosition()],
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
           })
         ],
-        target: 'map',
+        overlays: [member.overlay],
+        target: 'app-map',
         view: new ol.View({
-          center: [12696299, 2576970],
-          zoom: 13
+          center: [114.05160241122102, 22.542616783367],
+          zoom: 13,
+          minZoom:10,
+          projection: 'EPSG:4326'
         })
       });
 	 
-	 
 	  app.appListen(map);
-	 toolkit.documReady(app);
+	 toolkit.documReady(map,app,member);
 	 map.addLayer(member.drawLayer);
-	 var sss = back;
-	 var back1;
-
-	 console.log(sss);
+	 map.addLayer(member.routeLayer);
+	
 　　});
